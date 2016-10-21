@@ -1,4 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:fillViewport="true"
+    android:scrollbars = "vertical"
+    android:scrollbarStyle="insideInset"
+    >
 <android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
@@ -95,7 +102,7 @@
         android:id="@+id/imagePlane"
         android:layout_height="wrap_content"
         android:layout_width="wrap_content"
-        tools:src="@drawable/art_plane"
+        android:background="@drawable/art_plane"
         app:layout_constraintBottom_toTopOf="@+id/lineImage"
         app:layout_constraintLeft_toRightOf="@+id/leftRectangle"
         app:layout_constraintRight_toLeftOf="@+id/rightRectangle"
@@ -236,7 +243,7 @@
     <ImageView
         android:id="@+id/tableImage"
         android:background="@color/colorPrimary"
-        android:layout_height="64dp"
+        android:layout_height="72dp"
         android:layout_width="0dp"
         android:layout_marginStart="16dp"
         app:layout_constraintLeft_toLeftOf="parent"
@@ -295,7 +302,7 @@
         app:layout_constraintTop_toTopOf="@+id/tableImage"
         app:layout_constraintLeft_toLeftOf="@+id/tableImage"
         app:layout_constraintRight_toRightOf="@+id/tableImage"
-        android:textAppearance="@style/TextAppearance.AppCompat.Display2"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display3"
         android:textColor="@android:color/white"
         app:layout_constraintHorizontal_bias="0.0"
         android:textAlignment="center" />
@@ -309,7 +316,7 @@
         app:layout_constraintTop_toTopOf="@+id/tableImage"
         app:layout_constraintLeft_toLeftOf="@+id/tableImage"
         app:layout_constraintRight_toRightOf="@+id/tableImage"
-        android:textAppearance="@style/TextAppearance.AppCompat.Display2"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display3"
         android:textColor="@android:color/white"
         android:textAlignment="center" />
 
@@ -320,7 +327,7 @@
         app:layout_constraintTop_toTopOf="@+id/tableImage"
         app:layout_constraintLeft_toLeftOf="@+id/tableImage"
         app:layout_constraintRight_toRightOf="@+id/tableImage"
-        android:textAppearance="@style/TextAppearance.AppCompat.Display2"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display3"
         android:textColor="@android:color/white"
         app:layout_constraintHorizontal_bias="1.0"
         android:textAlignment="center"
@@ -339,3 +346,4 @@
         />
 
 </android.support.constraint.ConstraintLayout>
+ </ScrollView>
