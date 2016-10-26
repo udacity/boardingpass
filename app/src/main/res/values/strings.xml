@@ -19,4 +19,8 @@
     <string name="terminal">2</string>
     <string name="gate">58B</string>
     <string name="seat">24A</string>
+    <string name="boarding_alert_title">BOARDING SOON</string>
+    <string name="boarding_alert_text">
+        Your flight is boarding soon. Please proceed to your gate as quickly as possible.
+    </string>
 </resources>
