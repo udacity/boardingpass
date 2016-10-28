@@ -1,27 +1,32 @@
 package com.example.android.boardingpass;
 
 import java.sql.Timestamp;
+import java.util.concurrent.TimeUnit;
 
 /**
- * Created by asser on 10/25/16.
+ * BoardingPassInfo is a simple POJO that contains information about, you guessed it, a boarding
+ * pass! Normally, it is best practice in Java to declare member variables as private and provide
+ * getters, but we are leaving these fields public for ease of use.
  */
-
 public class BoardingPassInfo {
 
     public String passengerName;
     public String flightCode;
     public String originCode;
     public String destCode;
+
     public Timestamp boardingTime;
     public Timestamp departureTime;
     public Timestamp arrivalTime;
+
     public String departureTerminal;
     public String departureGate;
     public String seatNumber;
+
     public int barCodeImageResource;
 
-    public int getMinutesTillBoarding() {
-        long milliSecs = boardingTime.getTime() - System.currentTimeMillis();
-        return (int)(milliSecs/60000);
+    public long getMinutesUntilBoarding() {
+        long millisUntilBoarding = boardingTime.getTime() - System.currentTimeMillis();
+        return TimeUnit.MILLISECONDS.toMinutes(millisUntilBoarding);
     }
 }

@@ -7,10 +7,10 @@
     <string name="flight_code">UDA 2465</string>
     <string name="boarding_time_label">BOARDING TIME</string>
     <string name="boarding_time">02:10 PM</string>
-    <string name="departure_time_label">DEPARTURE TIME</string>
+    <string name="departure_time_label">DEPARTURE</string>
     <string name="departure_time">02:40 PM</string>
     <string name="arrival_time">12:40 AM</string>
-    <string name="arrival_time_label">ARRIVAL TIME</string>
+    <string name="arrival_time_label">ARRIVAL</string>
     <string name="boarding_in_time">00:15</string>
     <string name="boarding_in_label">BOARDING IN</string>
     <string name="terminal_label">TERMINAL</string>
@@ -19,4 +19,10 @@
     <string name="terminal">2</string>
     <string name="gate">58B</string>
     <string name="seat">24A</string>
+    <string name="boarding_alert_title">BOARDING SOON</string>
+    <string name="boarding_alert_text">
+        Your flight is boarding soon. Please proceed to your gate as quickly as possible.
+    </string>
+    <string name="countDownFormat" >%1$02d:%2$02d</string>
+    <string name="timeFormat">hh:mm a</string>
 </resources>
