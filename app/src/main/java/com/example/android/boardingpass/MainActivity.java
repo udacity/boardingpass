@@ -30,15 +30,15 @@ public class MainActivity extends AppCompatActivity {
 
         /*
          * Normally in an app that displays time sensitive alerts, you'd be doing a whole bunch
-         * of stuff in the background. For simplicity here, we just check when the app starts if
-         * we should show a notification. After all, this lesson is about design, not ACTUALLY
+         * of stuff in the background. For simplicity here, we just show the notification every
+         * time the app launches. After all, this lesson is about design, not ACTUALLY
          * about creating a full fledged boarding pass application.
          */
-        if (NotificationUtils.shouldNotify(fakeBoardingInfo)) {
-            String reminderTitle = getString(R.string.boarding_alert_title);
-            String reminderText = getString(R.string.boarding_alert_text);
-            NotificationUtils.notifyUser(this, reminderTitle, reminderText);
-        }
+
+        // COMPLETED (14) Call notifiyUser in NotificationUtils and pass the title and text strings
+        String reminderTitle = getString(R.string.boarding_alert_title);
+        String reminderText = getString(R.string.boarding_alert_text,fakeBoardingInfo.getMinutesUntilBoarding());
+        NotificationUtils.notifyUser(this, reminderTitle, reminderText);
 
         displayBoardingPassInfo(fakeBoardingInfo);
     }
